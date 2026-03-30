@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🪺 EduNest
 
-## Getting Started
+> **Where Learning Feels Like Home**
 
-First, run the development server:
+A fully functional, role-based "School LMS Demo" frontend built with Next.js 14 and Tailwind CSS. 
+This project uses mock data and React Context for state management, meaning there's absolutely no backend or database required. It's ready to be deployed instantly.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyour-username%2Fedunest-lms-demo)
+
+## 🔐 Login Credentials
+
+Use the following credentials to explore the different dashboards:
+
+| Role | Email | Password |
+| :--- | :--- | :--- |
+| **Admin** | `admin@school.com` | `admin123` |
+| **Teacher** | `teacher@school.com` | `teacher123` |
+| **Student** | `student@school.com` | `student123` |
+
+> *Note: By default, the app uses React Context with initial mock data. All state modifications (creating courses, taking quizzes, adding users) will reset if you hard refresh the page.*
+
+## 🌟 Features
+
+- **Three distinct roles:** Admin, Teacher, and Student.
+- **Interactive UI:** Dynamic dashboards, table filtering, modals, and charts (Recharts).
+- **Responsive Design:** Fully responsive layouts using Tailwind CSS.
+- **Mock Authentication:** Seamless login experience directly loading into specific role capabilities via explicit paths.
+- **No Backend Needed:** Clean and secure way to showcase frontend design without setting up a backend.
+
+## 🚀 Getting Started Locally
+
+First, clone the repository and navigate into it:
+
+```bash
+git clone https://github.com/your-username/edunest-lms-demo.git
+cd edunest-lms-demo
+```
+
+Next, install the dependencies:
+
+```bash
+npm install
+```
+*(If you face peer dependency issues, append `--legacy-peer-deps`)*
+
+Finally, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 14 (App Router)
+- Tailwind CSS
+- Lucide React (UI Icons)
+- Recharts (Data Visualization)
+- React Hot Toast (Alerts & Notifications)
