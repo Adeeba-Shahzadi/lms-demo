@@ -37,7 +37,7 @@ export default function StudentQuizzesPage() {
             <div className="p-4 bg-gray-50 flex items-center justify-between">
               <span className="text-sm font-medium text-gray-700">Attempts: {quiz.attemptsLeft} left</span>
               <Link href={`/student/quizzes/${quiz.id}`}>
-                <Button className="flex items-center gap-2 px-4 shadow-sm bg-[#002D62]" disabled={quiz.attemptsLeft === 0}>
+                <Button className="flex items-center gap-2 px-4 shadow-sm bg-[#3b4e33]" disabled={quiz.attemptsLeft === 0}>
                   {quiz.attemptsLeft === 0 ? 'Completed' : 'Start Quiz'} {quiz.attemptsLeft > 0 && <PlayCircle size={16} />}
                 </Button>
               </Link>

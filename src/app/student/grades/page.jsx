@@ -22,7 +22,7 @@ export default function StudentGradesPage() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 animate-fade-in-up">
         <StatCard title="Overall Percentage" value="84%" icon={Award} trend={{ value: '+2% from last term', isPositive: true }} />
         <StatCard title="Registered Subjects" value="8" icon={TrendingUp} />
-        <Card className="p-6 bg-gradient-to-br from-[#002D62] to-blue-400 text-white flex flex-col justify-center border-none transition-transform hover:scale-[1.02] duration-300">
+        <Card className="p-6 bg-gradient-to-br from-[#3b4e33] to-blue-400 text-white flex flex-col justify-center border-none transition-transform hover:scale-[1.02] duration-300">
           <h3 className="text-blue-100 font-medium text-sm mb-1">Academic Standing</h3>
           <p className="text-2xl font-bold">Good Standing</p>
         </Card>
@@ -38,7 +38,7 @@ export default function StudentGradesPage() {
               <tr key={grade.id} className="hover:bg-gray-50/50 transition-colors">
                 <td className="py-4 px-4 font-semibold text-gray-900">{grade.courseTitle}</td>
                 <td className="py-4 px-4 text-sm text-gray-600 font-medium">{grade.totalMarks}</td>
-                <td className="py-4 px-4 text-sm text-gray-600 font-medium text-[#002D62]">{grade.obtainedMarks}</td>
+                <td className="py-4 px-4 text-sm text-gray-600 font-medium text-[#3b4e33]">{grade.obtainedMarks}</td>
                 <td className="py-4 px-4 font-bold text-gray-900">{grade.percentage}%</td>
                 <td className="py-4 px-4">
                   <span className={`inline-flex items-center justify-center w-8 h-8 rounded-lg text-sm font-bold shadow-sm border ${

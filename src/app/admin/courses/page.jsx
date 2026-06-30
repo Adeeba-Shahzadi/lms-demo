@@ -41,7 +41,7 @@ export default function CoursesPage() {
               <Badge variant={course.status === 'Active' ? 'success' : 'default'}>
                 {course.status}
               </Badge>
-              <button className="text-gray-400 hover:text-[#002D62] transition-colors">
+              <button className="text-gray-400 hover:text-[#3b4e33] transition-colors">
                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                 </svg>
@@ -56,7 +56,7 @@ export default function CoursesPage() {
                  {course.studentsCount} <span className="text-gray-500 font-normal">Students</span>
               </div>
               <div className="flex gap-3">
-                <button className="text-sm font-medium text-[#002D62] hover:text-blue-800 transition-colors">Edit</button>
+                <button className="text-sm font-medium text-[#3b4e33] hover:text-blue-800 transition-colors">Edit</button>
                 <button className="text-sm font-medium text-red-600 hover:text-red-800 transition-colors flex items-center gap-1">
                   <Archive size={14} /> Archive
                 </button>
@@ -81,7 +81,7 @@ export default function CoursesPage() {
               rows={3}
               value={description}
               onChange={e => setDescription(e.target.value)}
-              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62]"
+              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33]"
               placeholder="Course description..."
             />
           </div>
@@ -90,7 +90,7 @@ export default function CoursesPage() {
             <select 
               value={teacher}
               onChange={e => setTeacher(e.target.value)}
-              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62]"
+              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33]"
             >
               <option value="Ms. Sara">Ms. Sara</option>
               <option value="Mr. John">Mr. John</option>

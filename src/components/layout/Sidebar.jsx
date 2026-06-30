@@ -52,9 +52,9 @@ export function Sidebar() {
   return (
     <aside className="w-64 bg-white border-r border-gray-200 hidden md:flex flex-col">
       <div className="h-20 flex items-center px-6 border-b border-gray-200 gap-3">
-        <img src="https://ssphs.edu.pk/wp-content/uploads/2026/03/logo-removebg-preview.png" alt="SSPHS Logo" className="h-10 w-auto object-contain" />
-        <span className="text-xl font-bold tracking-tight text-[#002D62] hidden lg:block">
-          SSPHS
+        <img src="/majora_logo.png" alt="EduNest Logo" className="h-11 w-auto object-contain" />
+        <span className="text-xl font-bold tracking-tight text-[#3b4e33] hidden lg:block">
+          EduNest
         </span>
       </div>
       <nav className="flex-1 py-4 px-3 space-y-1 overflow-y-auto">
@@ -67,12 +67,12 @@ export function Sidebar() {
               href={link.href}
               className={`flex items-center px-3 py-2.5 text-sm font-medium rounded-lg transition-colors
                 ${isActive 
-                  ? 'bg-blue-50 text-[#002D62] border-l-4 border-[#002D62] shadow-sm' 
+                  ? 'bg-green-50/70 text-[#3b4e33] border-l-4 border-[#3b4e33] shadow-sm' 
                   : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900 border-l-4 border-transparent'
                 }
               `}
             >
-              <Icon size={18} className={`mr-3 transition-colors ${isActive ? 'text-[#002D62]' : 'text-gray-400'}`} />
+              <Icon size={18} className={`mr-3 transition-colors ${isActive ? 'text-[#3b4e33]' : 'text-gray-400'}`} />
               {link.name}
             </Link>
           );

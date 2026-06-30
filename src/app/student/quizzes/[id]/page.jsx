@@ -62,8 +62,8 @@ export default function QuizTakingPage({ params }) {
     return (
       <div className="max-w-2xl mx-auto space-y-6 pt-10">
         <Card className="p-8 text-center space-y-6">
-          <div className="mx-auto w-24 h-24 rounded-full flex items-center justify-center bg-blue-50 border-4 border-[#002D62] shadow-sm">
-            <span className="text-3xl font-bold text-[#002D62]">{percentage}%</span>
+          <div className="mx-auto w-24 h-24 rounded-full flex items-center justify-center bg-blue-50 border-4 border-[#3b4e33] shadow-sm">
+            <span className="text-3xl font-bold text-[#3b4e33]">{percentage}%</span>
           </div>
           
           <div>
@@ -128,15 +128,15 @@ export default function QuizTakingPage({ params }) {
                 key={idx}
                 onClick={() => toggleAnswer(activeQ.id, idx)}
                 className={`w-full text-left p-4 rounded-xl border-2 transition-all flex items-center gap-4 group
-                  ${isSelected ? 'border-[#002D62] bg-blue-50/50' : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'}
+                  ${isSelected ? 'border-[#3b4e33] bg-blue-50/50' : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'}
                 `}
               >
                 <div className={`w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0
-                  ${isSelected ? 'border-[#002D62]' : 'border-gray-300 group-hover:border-gray-400'}
+                  ${isSelected ? 'border-[#3b4e33]' : 'border-gray-300 group-hover:border-gray-400'}
                 `}>
-                  {isSelected && <div className="w-2.5 h-2.5 rounded-full bg-[#002D62]"></div>}
+                  {isSelected && <div className="w-2.5 h-2.5 rounded-full bg-[#3b4e33]"></div>}
                 </div>
-                <span className={`text-base font-medium ${isSelected ? 'text-[#002D62]' : 'text-gray-700'}`}>
+                <span className={`text-base font-medium ${isSelected ? 'text-[#3b4e33]' : 'text-gray-700'}`}>
                   {opt}
                 </span>
               </button>
@@ -155,7 +155,7 @@ export default function QuizTakingPage({ params }) {
           </Button>
 
           {currentIdx < questions.length - 1 ? (
-            <Button onClick={() => setCurrentIdx(prev => prev + 1)} className="px-8 bg-[#002D62]">
+            <Button onClick={() => setCurrentIdx(prev => prev + 1)} className="px-8 bg-[#3b4e33]">
               Next
             </Button>
           ) : (

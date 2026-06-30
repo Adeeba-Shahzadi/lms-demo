@@ -60,9 +60,9 @@ export function MobileNav({ isOpen, onClose }) {
         </div>
         <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
           <div className="flex-shrink-0 flex items-center px-4 gap-3">
-            <img src="https://ssphs.edu.pk/wp-content/uploads/2026/03/logo-removebg-preview.png" alt="SSPHS Logo" className="h-10 w-auto object-contain" />
-            <span className="text-xl font-bold tracking-tight text-[#002D62]">
-              SSPHS
+            <img src="/majora_logo.png" alt="EduNest Logo" className="h-11 w-auto object-contain" />
+            <span className="text-xl font-bold tracking-tight text-[#3b4e33]">
+              EduNest
             </span>
           </div>
           <nav className="mt-8 px-2 space-y-1">
@@ -75,10 +75,10 @@ export function MobileNav({ isOpen, onClose }) {
                   href={link.href}
                   onClick={onClose}
                   className={`group flex items-center px-2 py-2 text-base font-medium rounded-md
-                    ${isActive ? 'bg-blue-50 text-[#002D62] border-l-4 border-[#002D62]' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900 border-l-4 border-transparent'}
+                    ${isActive ? 'bg-green-50/70 text-[#3b4e33] border-l-4 border-[#3b4e33]' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900 border-l-4 border-transparent'}
                   `}
                 >
-                  <Icon className={`mr-4 h-6 w-6 ${isActive ? 'text-[#002D62]' : 'text-gray-400'}`} />
+                  <Icon className={`mr-4 h-6 w-6 ${isActive ? 'text-[#3b4e33]' : 'text-gray-400'}`} />
                   {link.name}
                 </Link>
               );

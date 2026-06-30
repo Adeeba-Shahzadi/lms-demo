@@ -24,7 +24,7 @@ export default function GradebookPage() {
           <select 
             value={selectedCourse} 
             onChange={e => setSelectedCourse(e.target.value)} 
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62] bg-white min-w-[200px]"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33] bg-white min-w-[200px]"
           >
             {myCourses.map(c => <option key={c.id} value={c.title}>{c.title}</option>)}
           </select>
@@ -44,7 +44,7 @@ export default function GradebookPage() {
                 <td className="py-4 px-4 text-sm text-gray-600">{grade.a2}/100</td>
                 <td className="py-4 px-4 text-sm text-gray-600">{grade.q1}/30</td>
                 <td className="py-4 px-4 text-sm text-gray-600">{grade.q2}/15</td>
-                <td className="py-4 px-4 font-bold text-[#002D62]">{grade.final}%</td>
+                <td className="py-4 px-4 font-bold text-[#3b4e33]">{grade.final}%</td>
                 <td className="py-4 px-4">
                   <span className={`inline-flex items-center justify-center w-8 h-8 rounded-lg text-sm font-bold ${
                     grade.letter === 'A' ? 'bg-green-100 text-green-700' :

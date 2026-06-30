@@ -8,14 +8,14 @@ export const MOCK_COURSES = [
 ];
 
 export const MOCK_USERS = [
-  { id: 1, name: 'Maj (R) Mudasser', email: 'admin@school.com', role: 'ADMIN', status: 'Active' },
-  { id: 2, name: 'Ms. Ayesha', email: 'teacher@school.com', role: 'TEACHER', status: 'Active' },
-  { id: 3, name: 'Hassan Ali', email: 'student@school.com', role: 'STUDENT', status: 'Active' },
-  { id: 4, name: 'Omar Malik', email: 'omar@school.com', role: 'STUDENT', status: 'Active' },
-  { id: 5, name: 'Zainab Noor', email: 'zainab@school.com', role: 'STUDENT', status: 'Active' },
-  { id: 6, name: 'Mr. Tariq', email: 'tariq@school.com', role: 'TEACHER', status: 'Inactive' },
-  { id: 7, name: 'Ms. Fatima', email: 'fatima@school.com', role: 'TEACHER', status: 'Active' },
-  { id: 8, name: 'Mr. Usman', email: 'usman@school.com', role: 'TEACHER', status: 'Active' },
+  { id: 1, name: 'EduNest Admin', email: 'admin@edunest.com', role: 'ADMIN', status: 'Active' },
+  { id: 2, name: 'Ms. Ayesha', email: 'teacher@edunest.com', role: 'TEACHER', status: 'Active' },
+  { id: 3, name: 'Hassan Ali', email: 'student@edunest.com', role: 'STUDENT', status: 'Active' },
+  { id: 4, name: 'Omar Malik', email: 'omar@edunest.com', role: 'STUDENT', status: 'Active' },
+  { id: 5, name: 'Zainab Noor', email: 'zainab@edunest.com', role: 'STUDENT', status: 'Active' },
+  { id: 6, name: 'Mr. Tariq', email: 'tariq@edunest.com', role: 'TEACHER', status: 'Inactive' },
+  { id: 7, name: 'Ms. Fatima', email: 'fatima@edunest.com', role: 'TEACHER', status: 'Active' },
+  { id: 8, name: 'Mr. Usman', email: 'usman@edunest.com', role: 'TEACHER', status: 'Active' },
 ];
 
 export const MOCK_ASSIGNMENTS = [

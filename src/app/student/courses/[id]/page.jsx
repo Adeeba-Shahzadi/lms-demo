@@ -46,9 +46,9 @@ export default function StudentCourseDetails({ params }) {
         <div className="w-20 h-20 shrink-0 relative flex items-center justify-center">
           <svg className="w-20 h-20 -rotate-90 transform" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="40" stroke="#E0E7FF" strokeWidth="8" fill="none" />
-            <circle cx="50" cy="50" r="40" stroke="#002D62" strokeWidth="8" fill="none" strokeDasharray="251.2" strokeDashoffset={251.2 - (251.2 * progressPercent) / 100} className="transition-all duration-1000 ease-out" />
+            <circle cx="50" cy="50" r="40" stroke="#3b4e33" strokeWidth="8" fill="none" strokeDasharray="251.2" strokeDashoffset={251.2 - (251.2 * progressPercent) / 100} className="transition-all duration-1000 ease-out" />
           </svg>
-          <span className="absolute text-lg font-bold text-[#002D62]">{progressPercent}%</span>
+          <span className="absolute text-lg font-bold text-[#3b4e33]">{progressPercent}%</span>
         </div>
         <div>
           <h3 className="font-semibold text-gray-900 text-lg">Your Progress</h3>
@@ -77,7 +77,7 @@ export default function StudentCourseDetails({ params }) {
                 {module.lessons.map(lesson => (
                   <div key={lesson.id} className="p-4 flex items-center justify-between hover:bg-gray-50/50 transition-colors group">
                     <div className="flex items-center gap-4">
-                      <button onClick={() => toggleLessonComplete(module.id, lesson.id)} className="text-gray-400 hover:text-[#002D62] transition-colors focus:outline-none">
+                      <button onClick={() => toggleLessonComplete(module.id, lesson.id)} className="text-gray-400 hover:text-[#3b4e33] transition-colors focus:outline-none">
                         {lesson.completed ? <CheckCircle2 className="text-green-500" size={24} /> : <Circle size={24} />}
                       </button>
                       
@@ -92,7 +92,7 @@ export default function StudentCourseDetails({ params }) {
                       </div>
                     </div>
                     {!lesson.completed && (
-                      <button className="text-sm font-medium text-[#002D62] opacity-0 group-hover:opacity-100 transition-opacity pr-4" onClick={() => toggleLessonComplete(module.id, lesson.id)}>
+                      <button className="text-sm font-medium text-[#3b4e33] opacity-0 group-hover:opacity-100 transition-opacity pr-4" onClick={() => toggleLessonComplete(module.id, lesson.id)}>
                         Mark Complete
                       </button>
                     )}

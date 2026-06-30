@@ -27,10 +27,10 @@ export default function TeacherCoursesPage() {
             <div className="mb-6">
               <div className="flex justify-between text-sm mb-1">
                 <span className="text-gray-500 font-medium">Class Progress</span>
-                <span className="text-[#002D62] font-bold">{course.progress}%</span>
+                <span className="text-[#3b4e33] font-bold">{course.progress}%</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2">
-                <div className="bg-[#002D62] h-2 rounded-full" style={{ width: `${course.progress}%` }}></div>
+                <div className="bg-[#3b4e33] h-2 rounded-full" style={{ width: `${course.progress}%` }}></div>
               </div>
             </div>
             

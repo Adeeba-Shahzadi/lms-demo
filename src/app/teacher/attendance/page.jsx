@@ -41,7 +41,7 @@ export default function AttendancePage() {
           <select 
             value={selectedCourse} 
             onChange={e => setSelectedCourse(e.target.value)} 
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62] bg-white min-w-[200px]"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33] bg-white min-w-[200px]"
           >
             {myCourses.map(c => <option key={c.id} value={c.title}>{c.title}</option>)}
           </select>
@@ -49,7 +49,7 @@ export default function AttendancePage() {
             type="date" 
             value={date}
             onChange={e => setDate(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62] bg-white"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33] bg-white"
           />
         </div>
       </div>
@@ -68,7 +68,7 @@ export default function AttendancePage() {
               {students.map(student => (
                 <tr key={student.id} className="hover:bg-gray-50/30 transition-colors">
                   <td className="py-4 px-6 font-medium text-gray-900 flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-sm font-bold text-[#002D62]">
+                    <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-sm font-bold text-[#3b4e33]">
                       {student.name.charAt(0)}
                     </div>
                     {student.name}
@@ -83,8 +83,8 @@ export default function AttendancePage() {
                   <td className="py-4 px-6 text-right">
                     <button
                       onClick={() => handleToggle(student.id)}
-                      className={`relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#002D62] focus:ring-offset-2 ${
-                        attendance[student.id] === 'Present' ? 'bg-[#002D62]' : 'bg-gray-200'
+                      className={`relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#3b4e33] focus:ring-offset-2 ${
+                        attendance[student.id] === 'Present' ? 'bg-[#3b4e33]' : 'bg-gray-200'
                       }`}
                     >
                       <span className="sr-only">Toggle attendance</span>

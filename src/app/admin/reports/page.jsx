@@ -16,7 +16,7 @@ const chartData = [
 export default function ReportsPage() {
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold text-gray-900">SSPHS Analytics</h1>
+      <h1 className="text-2xl font-bold text-gray-900">EduNest Analytics</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <StatCard title="Avg Attendance" value="87%" icon={CheckCircle2} trend={{ value: '2%', isPositive: true }} />
@@ -37,7 +37,7 @@ export default function ReportsPage() {
                   cursor={{ stroke: '#E5E7EB', strokeWidth: 2 }}
                   contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
                 />
-                <Line type="monotone" dataKey="score" stroke="#002D62" strokeWidth={3} dot={{ r: 4, fill: '#002D62' }} activeDot={{ r: 6 }} />
+                <Line type="monotone" dataKey="score" stroke="#3b4e33" strokeWidth={3} dot={{ r: 4, fill: '#3b4e33' }} activeDot={{ r: 6 }} />
               </LineChart>
             </ResponsiveContainer>
           </div>
@@ -58,7 +58,7 @@ export default function ReportsPage() {
                 <tr key={student.rank} className="hover:bg-gray-50/50">
                   <td className="py-3 px-4 text-center font-bold text-gray-400">#{student.rank}</td>
                   <td className="py-3 px-4 font-medium text-gray-900">{student.name}</td>
-                  <td className="py-3 px-4 font-medium text-[#002D62]">{student.score}</td>
+                  <td className="py-3 px-4 font-medium text-[#3b4e33]">{student.score}</td>
                   <td className="py-3 px-4">
                     <span className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold ${
                       student.grade === 'A' ? 'bg-green-100 text-green-700' :

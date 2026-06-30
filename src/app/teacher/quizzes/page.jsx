@@ -76,7 +76,7 @@ export default function QuizzesPage() {
                 </td>
                 <td className="py-4 px-4">
                   <div className="flex items-center gap-3">
-                    <button className="text-sm font-medium text-[#002D62] hover:text-blue-800">Edit</button>
+                    <button className="text-sm font-medium text-[#3b4e33] hover:text-blue-800">Edit</button>
                     <button className="text-gray-400 hover:text-red-500"><Trash2 size={16} /></button>
                   </div>
                 </td>
@@ -113,8 +113,8 @@ export default function QuizzesPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
                 {qOpts.map((opt, i) => (
                   <div key={i} className="flex items-center gap-2">
-                    <input type="radio" name="correctOpt" checked={qCorrect === i} onChange={() => setQCorrect(i)} className="text-[#002D62] focus:ring-[#002D62]" />
-                    <input type="text" placeholder={`Option ${i+1}`} value={opt} onChange={e => handleOptChange(i, e.target.value)} className="flex-1 px-3 py-1.5 border rounded-lg text-sm focus:outline-none focus:ring-[#002D62]" />
+                    <input type="radio" name="correctOpt" checked={qCorrect === i} onChange={() => setQCorrect(i)} className="text-[#3b4e33] focus:ring-[#3b4e33]" />
+                    <input type="text" placeholder={`Option ${i+1}`} value={opt} onChange={e => handleOptChange(i, e.target.value)} className="flex-1 px-3 py-1.5 border rounded-lg text-sm focus:outline-none focus:ring-[#3b4e33]" />
                   </div>
                 ))}
               </div>
@@ -132,7 +132,7 @@ export default function QuizzesPage() {
 
           <div className="flex justify-end gap-3">
             <Button variant="outline" type="button" onClick={() => setIsModalOpen(false)}>Cancel</Button>
-            <Button type="button" onClick={handlePublish} className="flex items-center gap-2 bg-[#002D62]">
+            <Button type="button" onClick={handlePublish} className="flex items-center gap-2 bg-[#3b4e33]">
               <ShieldCheck size={18} /> Publish Quiz
             </Button>
           </div>

@@ -74,7 +74,7 @@ export default function CourseDetails({ params }) {
                     </div>
                   ))}
                   <div className="p-4 bg-gray-50/50 text-center">
-                    <button className="text-sm font-medium text-[#002D62] hover:text-blue-800 flex items-center justify-center w-full gap-2">
+                    <button className="text-sm font-medium text-[#3b4e33] hover:text-blue-800 flex items-center justify-center w-full gap-2">
                       <Plus size={16} /> Add Lesson
                     </button>
                   </div>
@@ -88,11 +88,11 @@ export default function CourseDetails({ params }) {
           <Card className="p-6">
             <h3 className="font-semibold text-gray-900 mb-4">Course Overview</h3>
             <div className="flex items-end justify-between mb-2">
-              <span className="text-3xl font-bold text-[#002D62]">{course.progress}%</span>
+              <span className="text-3xl font-bold text-[#3b4e33]">{course.progress}%</span>
               <span className="text-sm text-gray-500 pb-1">avg completion rate</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2 mb-6">
-              <div className="bg-[#002D62] h-2 rounded-full" style={{ width: `${course.progress}%` }}></div>
+              <div className="bg-[#3b4e33] h-2 rounded-full" style={{ width: `${course.progress}%` }}></div>
             </div>
             <div className="space-y-3">
               <div className="flex justify-between text-sm">

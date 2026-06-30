@@ -13,9 +13,9 @@ Use the following credentials to explore the different dashboards:
 
 | Role | Email | Password |
 | :--- | :--- | :--- |
-| **Admin** | `admin@school.com` | `admin123` |
-| **Teacher** | `teacher@school.com` | `teacher123` |
-| **Student** | `student@school.com` | `student123` |
+| **Admin** | `admin@edunest.com` | `admin123` |
+| **Teacher** | `teacher@edunest.com` | `teacher123` |
+| **Student** | `student@edunest.com` | `student123` |
 
 > *Note: By default, the app uses React Context with initial mock data. All state modifications (creating courses, taking quizzes, adding users) will reset if you hard refresh the page.*
 

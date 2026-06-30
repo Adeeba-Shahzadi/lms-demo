@@ -27,7 +27,7 @@ export default function TeacherDashboard() {
               { id: 3, title: 'Motion Lab Report', course: 'Physics Grade 11', date: 'In 4 days', type: 'Assignment' },
             ].map(item => (
               <div key={item.id} className="flex gap-4 p-4 border border-gray-100 rounded-lg bg-gray-50/50">
-                <div className="w-10 h-10 rounded-full bg-blue-100 text-[#002D62] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-blue-100 text-[#3b4e33] flex items-center justify-center shrink-0">
                   <Clock size={20} />
                 </div>
                 <div className="flex-1">
@@ -47,8 +47,8 @@ export default function TeacherDashboard() {
         <Card className="p-6">
           <h2 className="text-lg font-semibold text-gray-900 mb-4">Quick Actions</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Link href="/teacher/assignments" className="block p-4 border border-gray-100 rounded-lg hover:border-[#002D62] hover:bg-blue-50/50 transition-colors group">
-              <div className="w-12 h-12 bg-blue-100 text-[#002D62] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <Link href="/teacher/assignments" className="block p-4 border border-gray-100 rounded-lg hover:border-[#3b4e33] hover:bg-blue-50/50 transition-colors group">
+              <div className="w-12 h-12 bg-blue-100 text-[#3b4e33] rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <FileText size={24} />
               </div>
               <h3 className="font-semibold text-gray-900">Create Assignment</h3>

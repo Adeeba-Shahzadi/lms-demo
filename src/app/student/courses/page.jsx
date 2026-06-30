@@ -17,7 +17,7 @@ export default function StudentCoursesPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {enrolledCourses.map(course => (
           <Card key={course.id} className="p-0 flex flex-col hover:shadow-lg transition-shadow overflow-hidden group border-gray-200">
-            <div className="h-40 bg-gradient-to-br from-[#002D62] to-blue-400 relative p-6 flex flex-col justify-end">
+            <div className="h-40 bg-gradient-to-br from-[#3b4e33] to-blue-400 relative p-6 flex flex-col justify-end">
               <h3 className="text-xl font-bold text-white leading-tight mt-auto">{course.title}</h3>
             </div>
             
@@ -30,10 +30,10 @@ export default function StudentCoursesPage() {
               <div className="mt-auto mb-6">
                 <div className="flex justify-between text-sm mb-2">
                   <span className="text-gray-600 font-medium">Progress</span>
-                  <span className="text-[#002D62] font-bold">{course.progress}%</span>
+                  <span className="text-[#3b4e33] font-bold">{course.progress}%</span>
                 </div>
                 <div className="w-full bg-gray-100 rounded-full h-2 overflow-hidden">
-                  <div className="bg-[#002D62] h-2 rounded-full transition-all duration-500" style={{ width: `${course.progress}%` }}></div>
+                  <div className="bg-[#3b4e33] h-2 rounded-full transition-all duration-500" style={{ width: `${course.progress}%` }}></div>
                 </div>
               </div>
               

@@ -1,7 +1,7 @@
 export const DEMO_USERS = {
-  admin:   { email: 'admin@school.com',   password: 'admin123',   role: 'ADMIN',   name: 'Maj (R) Mudasser' },
-  teacher: { email: 'teacher@school.com', password: 'teacher123', role: 'TEACHER', name: 'Ms. Ayesha' },
-  student: { email: 'student@school.com', password: 'student123', role: 'STUDENT', name: 'Hassan Ali' },
+  admin:   { email: 'admin@edunest.com',   password: 'admin123',   role: 'ADMIN',   name: 'EduNest Admin' },
+  teacher: { email: 'teacher@edunest.com', password: 'teacher123', role: 'TEACHER', name: 'Ms. Ayesha' },
+  student: { email: 'student@edunest.com', password: 'student123', role: 'STUDENT', name: 'Hassan Ali' },
 };
 
 export const getRegisteredUsers = () => {

@@ -49,15 +49,15 @@ export default function LoginPage() {
       <div className="w-full flex-1 flex flex-col justify-center items-center py-12">
         <div className="text-center mb-8">
         <div className="flex flex-col items-center justify-center gap-2 mb-2">
-          <img src="https://ssphs.edu.pk/wp-content/uploads/2026/03/logo-removebg-preview.png" alt="SSPHS Logo" className="h-24 w-auto object-contain drop-shadow-sm hover:scale-105 transition-transform" />
-          <h1 className="text-3xl font-bold tracking-tight text-[#002D62]">
-            SSPHS
+          <img src="/majora_logo.png" alt="EduNest Logo" className="h-24 w-auto object-contain drop-shadow-sm hover:scale-105 transition-transform" />
+          <h1 className="text-3xl font-bold tracking-tight text-[#3b4e33]">
+            EduNest
           </h1>
         </div>
-        <p className="text-gray-500 font-medium tracking-wide">Where Learning Begins</p>
+        <p className="text-gray-500 font-medium tracking-wide">Where Learning Feels Like Home</p>
       </div>
 
-      <Card className="w-full max-w-md p-8 shadow-lg border-t-4 border-t-[#002D62]">
+      <Card className="w-full max-w-md p-8 shadow-lg border-t-4 border-t-[#3b4e33]">
         <h2 className="text-2xl font-semibold text-center mb-6">Welcome Back</h2>
         
         <form onSubmit={handleLogin} className="space-y-4">
@@ -104,9 +104,9 @@ export default function LoginPage() {
       </div>
       
       <div className="mt-8 text-center text-sm text-gray-500 pb-4">
-        <p><strong>Sir Syed Pilot High School & College (SSPHS)</strong></p>
-        <p>Model Colony Wazirabad | <a href="tel:0556601097" className="hover:text-[#002D62] transition-colors">0556601097</a> | <a href="mailto:info@ssphs.edu.pk" className="hover:text-[#002D62] transition-colors">info@ssphs.edu.pk</a></p>
-        <p className="mt-1 text-xs text-gray-400">Principal: Maj (R) Mudasser Raza Butt</p>
+        <p><strong>EduNest LMS Portal</strong></p>
+        <p>Demo Environment &bull; Powered by <a href="https://majoratechnologies.com" target="_blank" rel="noopener noreferrer" className="text-[#3b4e33] font-semibold hover:underline transition-colors">Majora Technologies</a></p>
+        <p className="mt-1 text-xs text-gray-400">Contact: <a href="mailto:support@edunest.com" className="hover:underline">support@edunest.com</a></p>
       </div>
     </div>
   );

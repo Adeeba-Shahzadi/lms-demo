@@ -71,7 +71,7 @@ export default function UsersPage() {
               placeholder="Search users..." 
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#002D62]"
+              className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#3b4e33]"
             />
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function UsersPage() {
               <tr key={user.id} className="hover:bg-gray-50/50 transition-colors">
                 <td className="py-3 px-4">
                   <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full bg-[#002D62]/10 text-[#002D62] flex items-center justify-center font-bold text-sm mr-3 shrink-0">
+                    <div className="w-8 h-8 rounded-full bg-[#3b4e33]/10 text-[#3b4e33] flex items-center justify-center font-bold text-sm mr-3 shrink-0">
                       {user.name.charAt(0)}
                     </div>
                     <span className="font-medium text-gray-900">{user.name}</span>
@@ -101,7 +101,7 @@ export default function UsersPage() {
                 </td>
                 <td className="py-3 px-4 text-sm font-medium">
                   <div className="flex space-x-3">
-                    <button className="text-[#002D62] hover:text-blue-800 transition-colors">Edit</button>
+                    <button className="text-[#3b4e33] hover:text-blue-800 transition-colors">Edit</button>
                     <button className="text-gray-400 hover:text-red-500 transition-colors">Deactivate</button>
                   </div>
                 </td>
@@ -146,7 +146,7 @@ export default function UsersPage() {
             <select 
               value={newRole}
               onChange={e => setNewRole(e.target.value)}
-              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62]"
+              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33]"
             >
               <option value="STUDENT">Student</option>
               <option value="TEACHER">Teacher</option>

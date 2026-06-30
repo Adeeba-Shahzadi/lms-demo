@@ -19,9 +19,9 @@ export function Header({ setMobileMenuOpen }) {
           <Menu size={24} />
         </button>
         <div className="md:hidden flex items-center gap-2">
-          <img src="https://ssphs.edu.pk/wp-content/uploads/2026/03/logo-removebg-preview.png" alt="SSPHS Logo" className="h-8 w-auto object-contain" />
-          <span className="text-lg font-bold text-[#002D62]">
-            SSPHS
+          <img src="/majora_logo.png" alt="EduNest Logo" className="h-9 w-auto object-contain" />
+          <span className="text-lg font-bold text-[#3b4e33]">
+            EduNest
           </span>
         </div>
       </div>
@@ -38,7 +38,7 @@ export function Header({ setMobileMenuOpen }) {
             <p className="text-sm font-semibold text-gray-900">{user.name}</p>
             <p className="text-xs text-gray-500 capitalize">{user.role?.toLowerCase()}</p>
           </div>
-          <div className="w-9 h-9 bg-[#002D62] text-white rounded-full flex items-center justify-center font-bold shadow-sm">
+          <div className="w-9 h-9 bg-[#3b4e33] text-white rounded-full flex items-center justify-center font-bold shadow-sm">
             {user.name?.charAt(0)}
           </div>
         </div>

@@ -38,7 +38,7 @@ export default function AdminDashboard() {
                   cursor={{ fill: '#F3F4F6' }}
                   contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
                 />
-                <Bar dataKey="enrollments" fill="#002D62" radius={[4, 4, 0, 0]} maxBarSize={50} />
+                <Bar dataKey="enrollments" fill="#3b4e33" radius={[4, 4, 0, 0]} maxBarSize={50} />
               </BarChart>
             </ResponsiveContainer>
           </div>
@@ -57,7 +57,7 @@ export default function AdminDashboard() {
               <div key={item.id} className="flex gap-3 text-sm">
                 <div className="w-2 h-2 mt-1.5 rounded-full bg-[#F5C400] shrink-0"></div>
                 <div>
-                  <p className="text-gray-900"><span className="font-medium text-[#002D62]">{item.user}</span> {item.action}</p>
+                  <p className="text-gray-900"><span className="font-medium text-[#3b4e33]">{item.user}</span> {item.action}</p>
                   <p className="text-gray-500 text-xs mt-0.5">{item.time}</p>
                 </div>
               </div>

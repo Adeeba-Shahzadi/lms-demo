@@ -66,7 +66,7 @@ export default function AssignmentsPage() {
                 <td className="py-4 px-4 text-sm font-medium">
                   {assignment.submissions} / {assignment.totalStudents}
                   <div className="w-full bg-gray-200 rounded-full h-1.5 mt-2">
-                    <div className="bg-[#002D62] h-1.5 rounded-full" style={{ width: `${(assignment.submissions / Math.max(assignment.totalStudents, 1)) * 100}%` }}></div>
+                    <div className="bg-[#3b4e33] h-1.5 rounded-full" style={{ width: `${(assignment.submissions / Math.max(assignment.totalStudents, 1)) * 100}%` }}></div>
                   </div>
                 </td>
                 <td className="py-4 px-4">
@@ -96,12 +96,12 @@ export default function AssignmentsPage() {
             <label className="text-sm font-medium text-gray-700">Description</label>
             <textarea 
               rows={3} value={description} onChange={e => setDescription(e.target.value)}
-              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62]"
+              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33]"
             />
           </div>
           <div className="flex flex-col gap-1">
             <label className="text-sm font-medium text-gray-700">Course</label>
-            <select value={course} onChange={e => setCourse(e.target.value)} className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62]" required>
+            <select value={course} onChange={e => setCourse(e.target.value)} className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33]" required>
               {myCourses.map(c => <option key={c.id} value={c.title}>{c.title}</option>)}
             </select>
           </div>
@@ -120,7 +120,7 @@ export default function AssignmentsPage() {
       <Modal isOpen={isGradingOpen} onClose={() => setIsGradingOpen(false)} title={`Grade: ${activeAssignment?.title}`}>
         {activeAssignment && (
           <div className="space-y-4">
-            <div className="p-4 bg-blue-50 text-[#002D62] rounded-lg mb-4 text-sm flex justify-between border border-blue-100">
+            <div className="p-4 bg-blue-50 text-[#3b4e33] rounded-lg mb-4 text-sm flex justify-between border border-blue-100">
               <span><strong>Course:</strong> {activeAssignment.course}</span>
               <span><strong>Max Marks:</strong> {activeAssignment.maxMarks}</span>
             </div>

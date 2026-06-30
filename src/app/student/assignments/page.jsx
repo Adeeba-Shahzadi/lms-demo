@@ -43,7 +43,7 @@ export default function StudentAssignmentsPage() {
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`py-3 px-6 font-medium text-sm border-b-2 transition-colors ${
-              activeTab === tab ? 'border-[#002D62] text-[#002D62]' : 'border-transparent text-gray-500 hover:text-gray-700'
+              activeTab === tab ? 'border-[#3b4e33] text-[#3b4e33]' : 'border-transparent text-gray-500 hover:text-gray-700'
             }`}
           >
             {tab}
@@ -64,7 +64,7 @@ export default function StudentAssignmentsPage() {
                   {assignment.status}
                 </Badge>
                 {assignment.status === 'Graded' && (
-                  <span className="font-bold text-[#002D62] bg-blue-50 px-3 py-1 rounded-full text-sm">
+                  <span className="font-bold text-[#3b4e33] bg-blue-50 px-3 py-1 rounded-full text-sm">
                     {assignment.marksReceived}/{assignment.maxMarks}
                   </span>
                 )}
@@ -116,8 +116,8 @@ export default function StudentAssignmentsPage() {
               <p className="text-sm text-gray-500">{selectedAssignment.course}</p>
             </div>
             
-            <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 hover:border-[#002D62] hover:bg-blue-50/50 transition-colors cursor-pointer text-center group">
-              <UploadCloud size={48} className="mx-auto text-gray-400 mb-4 group-hover:text-[#002D62] transition-colors" />
+            <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 hover:border-[#3b4e33] hover:bg-blue-50/50 transition-colors cursor-pointer text-center group">
+              <UploadCloud size={48} className="mx-auto text-gray-400 mb-4 group-hover:text-[#3b4e33] transition-colors" />
               <p className="text-sm font-medium text-gray-900 mb-1">Click to upload or drag and drop</p>
               <p className="text-xs text-gray-500">PDF, DOCX, or ZIP (Max: 10MB)</p>
             </div>
@@ -126,7 +126,7 @@ export default function StudentAssignmentsPage() {
               <label className="text-sm font-medium text-gray-700">Add a comment (Optional)</label>
               <textarea 
                 rows={3} 
-                className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62] resize-none"
+                className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33] resize-none"
                 placeholder="Message for your teacher..."
               />
             </div>

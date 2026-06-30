@@ -41,7 +41,7 @@ export default function StudentNotificationsPage() {
             className={`p-6 flex gap-4 transition-colors hover:bg-gray-50/50 cursor-pointer ${!notif.read ? 'bg-blue-50/30' : ''}`}
             onClick={() => toggleRead(notif.id)}
           >
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${!notif.read ? 'bg-[#002D62] text-white shadow-md' : 'bg-gray-100 text-gray-400'}`}>
+            <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${!notif.read ? 'bg-[#3b4e33] text-white shadow-md' : 'bg-gray-100 text-gray-400'}`}>
               <Bell size={20} />
             </div>
             <div className="flex-1">
@@ -55,7 +55,7 @@ export default function StudentNotificationsPage() {
             </div>
             {!notif.read && (
               <div className="shrink-0 flex justify-center pt-2">
-                <div className="w-2.5 h-2.5 bg-[#002D62] rounded-full shadow-sm"></div>
+                <div className="w-2.5 h-2.5 bg-[#3b4e33] rounded-full shadow-sm"></div>
               </div>
             )}
           </div>

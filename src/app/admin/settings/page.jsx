@@ -7,10 +7,10 @@ import toast from 'react-hot-toast';
 import { Save } from 'lucide-react';
 
 export default function SettingsPage() {
-  const [schoolName, setSchoolName] = useState('SSPHS International School');
+  const [schoolName, setSchoolName] = useState('EduNest Academy');
   const [academicYear, setAcademicYear] = useState('2026-2027');
   const [gradingScale, setGradingScale] = useState('Percentage');
-  const [primaryColor, setPrimaryColor] = useState('#002D62');
+  const [primaryColor, setPrimaryColor] = useState('#3b4e33');
 
   const handleSave = (e) => {
     e.preventDefault();
@@ -41,7 +41,7 @@ export default function SettingsPage() {
                 <select 
                   value={academicYear}
                   onChange={e => setAcademicYear(e.target.value)}
-                  className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62]"
+                  className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33]"
                 >
                   <option>2025-2026</option>
                   <option>2026-2027</option>
@@ -53,7 +53,7 @@ export default function SettingsPage() {
                 <select 
                   value={gradingScale}
                   onChange={e => setGradingScale(e.target.value)}
-                  className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002D62]"
+                  className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3b4e33]"
                 >
                   <option>Letter Grades (A-F)</option>
                   <option>Percentage</option>

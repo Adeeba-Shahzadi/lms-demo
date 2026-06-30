@@ -11,7 +11,7 @@ export default function StudentDashboard() {
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <div className="flex justify-between items-center bg-[#002D62] text-white p-6 rounded-2xl shadow-sm mb-8 relative overflow-hidden">
+      <div className="flex justify-between items-center bg-[#3b4e33] text-white p-6 rounded-2xl shadow-sm mb-8 relative overflow-hidden">
         <div className="relative z-10 p-2">
           <h1 className="text-2xl sm:text-3xl font-bold mb-2">Good morning, {user?.name.split(' ')[0]} 👋</h1>
           <p className="text-blue-100 max-w-lg">You have 2 upcoming deadlines this week. Keep up the great work!</p>
@@ -30,7 +30,7 @@ export default function StudentDashboard() {
         <Card className="p-6">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-lg font-semibold text-gray-900">Upcoming Deadlines</h2>
-            <Link href="/student/assignments" className="text-sm font-medium text-[#002D62] hover:text-blue-800">View All</Link>
+            <Link href="/student/assignments" className="text-sm font-medium text-[#3b4e33] hover:text-blue-800">View All</Link>
           </div>
           <div className="space-y-4">
             {[
@@ -40,7 +40,7 @@ export default function StudentDashboard() {
             ].map(item => (
               <div key={item.id} className="flex gap-4 p-4 border border-gray-100 rounded-lg hover:shadow-sm transition-shadow bg-white">
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 ${
-                  item.type === 'Quiz' ? 'bg-amber-100 text-amber-600' : 'bg-blue-100 text-[#002D62]'
+                  item.type === 'Quiz' ? 'bg-amber-100 text-amber-600' : 'bg-blue-100 text-[#3b4e33]'
                 }`}>
                   {item.type === 'Quiz' ? <Target size={20} /> : <FileText size={20} />}
                 </div>
@@ -61,12 +61,12 @@ export default function StudentDashboard() {
         <Card className="p-6">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-lg font-semibold text-gray-900">Recent Notifications</h2>
-            <Link href="/student/notifications" className="text-sm font-medium text-[#002D62] hover:text-blue-800">View All</Link>
+            <Link href="/student/notifications" className="text-sm font-medium text-[#3b4e33] hover:text-blue-800">View All</Link>
           </div>
           <div className="space-y-4">
             {unreadNotifs.length > 0 ? unreadNotifs.map(notif => (
-              <div key={notif.id} className="flex gap-4 p-4 rounded-lg bg-blue-50/50 border-l-4 border-l-[#002D62]">
-                <div className="w-8 h-8 rounded-full bg-white text-[#002D62] flex items-center justify-center shrink-0 shadow-sm">
+              <div key={notif.id} className="flex gap-4 p-4 rounded-lg bg-blue-50/50 border-l-4 border-l-[#3b4e33]">
+                <div className="w-8 h-8 rounded-full bg-white text-[#3b4e33] flex items-center justify-center shrink-0 shadow-sm">
                   <Bell size={16} />
                 </div>
                 <div>
